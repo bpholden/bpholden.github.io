@@ -1,18 +1,138 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; U; Linux 2.2.14-5.0 i686) [Netscape]">
-   <title>Bradford Holden</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bradford Holden — Research Astronomer, UCO/Lick Observatory</title>
+<meta name="description" content="Bradford Holden, research astronomer at UC Observatories/Lick Observatory: exoplanet searches, telescope operations software, and instrumentation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Spectral:wght@300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-  <link rel="stylesheet" title="Default Style" type="text/css" href="default.css"><!-- Meta Information -->
 <body>
-<div id="header">
-  <h1 id="page-title">Bradford Holden</h1>
-  <p id="description">Research Astronomer, UC Observatories/Lick Observatory</p>
-</div>
-<br>Any thought, idea, or opinion expressed in this document in no way
-reflects upon the policies University of California or UCO/Lick Observatories. 
-Everything here is mine and mine alone. 
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <!-- EDIT: affiliation line -->
+      <p class="eyebrow">UC Observatories &middot; Lick Observatory &middot; UC Santa Cruz</p>
+      <h1>Bradford<br>Holden</h1>
+      <!-- EDIT: this is the one sentence that defines the page. Make it yours. -->
+      <p class="lede">I write the software that runs instruments and telescopes, help build new instruments, and reduce the data we collect from them.</p>
+      <nav class="links" aria-label="Contact and profiles">
+        <!-- EDIT: fill in your real addresses and IDs -->
+        <a href="mailto:holden@ucolick.org">Email</a>
+        <a href="https://www.ucolick.org/~holden/">UCO page</a>
+        <a href="https://github.com/bpholden">GitHub</a>
+        <a href="https://orcid.org/0000-0002-6153-3076">ORCID</a>
+        <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Holden%2C%20Bradford%22">Publications (ADS)</a>
+        <a href="https://scixplorer.org/search?d=astrophysics&fq=%7B%21type%3Daqp+v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&p=1&q=author%3A%22Holden%2C+B%22&sort=date+desc">Publications (SciXplorer)</a>
+      </nav>
+    </div>
+    <figure class="portrait">
+      <img src="images/portrait.png" alt="Bradford Holden" width="760" height="900">
+    </figure>
+  </div>
+  <div class="spectrum" role="presentation"></div>
+</header>
+
+<main id="main">
+
+  <section class="wrap" id="research" aria-labelledby="research-h">
+    <h2 id="research-h">What I work on</h2>
+    <!-- EDIT: three areas, three paragraphs. Rename the labels to match your actual work. -->
+    <div class="cards three">
+       <article class="card">
+        <p class="label">Instruments</p>
+        <h3>New spectrographs and Telescope Operations</h3>
+        <p>Working for the <a href="https://www.ucolick.org/">University of California Observatories</a>, I develop new instruments such as <a href="https://ui.adsabs.harvard.edu/abs/2024SPIE13096E..8ZF/abstract">LRIS-2</a> and <a href="https://keckao.github.io/strata/">STRATA</a>, improve existing ones, and write software to support those instruments such as <a href="https://www2.keck.hawaii.edu/inst/kpf/">KPF</a>.</p>
+      </article>
+      <article class="card">
+        <p class="label">Exoplanets</p>
+        <h3>Precision radial velocities</h3>
+        <p>I help run the Automated Planet Finder, so I work on finding and characterizing planets around nearby stars, and simulating what future surveys and missions will be able to detect.</p>
+      </article>
+     <article class="card">
+        <p class="label">Software for Astronomical Data</p>
+        <h3>Python libraries and tools for astronomy</h3>
+        <p>Developing and maintaining software that helps astronomers analyze and interpret their data, from image processing to spectral analysis, such as <a href="https://pypeit.readthedocs.io/">PypeIt</a>.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="spectrum thin" role="presentation"></div>
+
+  <section class="wrap" id="images" aria-labelledby="images-h">
+    <h2 id="images-h">From the work</h2>
+    <div class="gallery">
+      <!-- EDIT: swap in your own images and captions -->
+      <figure>
+        <img src="images/cropped_APF.png" alt="" width="900" height="640" loading="lazy">
+        <figcaption><span class="label">Fig. 1</span> The Automated Planet Finder on Mount Hamilton, open at the start of a night.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sun_apf.jpg" alt="" width="900" height="640" loading="lazy">
+        <figcaption><span class="label">Fig. 2</span> A solar spectrum observed with the Automated Planet Finder by taking spectra of the twilight sky.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/LRIS-2_CAD.png" alt="" width="900" height="640" loading="lazy">
+        <figcaption><span class="label">Fig. 3</span> CAD model as of Aug 2026 of the LRIS-2 instrument.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="spectrum thin" role="presentation"></div>
+
+  <section class="wrap" id="code" aria-labelledby="code-h">
+    <h2 id="code-h">Code</h2>
+    <p class="section-note">Most of my software is public. These are the projects I lead or maintain.</p>
+
+    <div class="cards two">
+      <a class="repo" href="https://github.com/pypeit/PypeIt">
+        <p class="repo-name">PypeIt</p>
+        <p>PypeIt is a Python spectroscopic data reduction pipeline.</p>
+        <p class="lang" data-lang="Python">Python</p>
+      </a>
+      <a class="repo" href="https://github.com/UCObservatories/lickRemoteObserving">
+        <p class="repo-name">lickRemoteObserving</p>
+        <p>Remote observing software for the Lick Observatory telescopes.</p>
+        <p class="lang" data-lang="Python">Python</p>
+      </a>
+      <a class="repo" href="https://github.com/bpholden/UCOmain">
+        <p class="repo-name">UCOmain</p>
+        <p>The specialized collection of software that runs the Automated Planet Finder telescope on a nightly basis.</p>
+        <p class="lang" data-lang="Python">Python</p>
+      </a>
+      <a class="repo" href="https://github.com/bpholden/expcalc">
+        <p class="repo-name">expcalc</p>
+        <p>expcalc is an exposure time calculator web service for Keck and Lick Observatories.</p>
+        <p class="lang" data-lang="Python">Python</p>
+      </a>
+      <a class="repo" href="https://github.com/bpholden/obscalc">
+        <p class="repo-name">obscalc</p>
+        <p>obscalc is a Python package for exposure time calculations for observatory instruments, a backend for expcalc.</p>
+        <p class="lang" data-lang="Python">Python</p>
+      </a>
+      <a class="repo" href="https://github.com/JenniferBurt/ThereMightBeGiants">
+        <p class="repo-name">ThereMightBeGiants</p>
+        <p>ThereMightBeGiants is a project lead by Jennifer Burt, actual exoplanet science!.</p>
+        <p class="lang" data-lang="Python">Python</p>
+      </a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="disclaimer">Any thought, idea, or opinion expressed in this document in no way reflects upon the policies of the University of California or UCO/Lick Observatories. Everything here is mine and mine alone.</p>
+    <p class="colophon">Set in Spectral and IBM Plex. Source on <a href="https://github.com/bpholden/bpholden.github.io">GitHub</a>.</p>
+  </div>
+</footer>
+
 </body>
 </html>
